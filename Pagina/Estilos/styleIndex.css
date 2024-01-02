@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding: 30px 10%;
+    font-family: "Nabla", sans-serif;
+    font-size: 60px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    justify-content: center;/*Pone el body en el centro de la pagina */
+    align-items: center;
+    min-height: 100vh;/* Ajusto verticalmente el body*/
+    /* background: url('./Imagenes/BackgroundLight.jpg') no-repeat; */
+    background-image: url('./Imagenes/BackgroundLight.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.container{
+    width: 420px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    /* hacerle espacio entre los borde y el contenido */
+    border-radius: 10px;/* bordes redondos */
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    position: relative;
+    display: flex;
+    justify-content: center;/* centra todo lo que este dentro del container */
+    transition: height .45s ease;
+    overflow: hidden;
+}
+/* depende de js */
+.container.active{
+    height: 520px;
+}
+
+.container .form-login{
+    transition: transform .5s ease;
+    transform: translateX(0);
+}
+
+/* depende de js */
+.container.active .form-login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.container .form-register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+/* depende de js */
+.container.active .form-register{
+    transition: transform .5s ease;
+    transform: translateX(0);
+}
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background: salmon; */
+    margin: 30px 0;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.container .show-password{
+    font-size: 14.5;
+    text-align: center;
+}
+
+.show-password img{
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 9%;
+    height: 30px;
+    background: #fff;
+    border-radius: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* .show-password img:hover{
+    background:  rgb(130, 162, 231);
+} */
+
+.container .forgot-remeber-password{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin-top: 20px;
+}
+
+.forgot-remeber-password label{
+    accent-color: #fff;
+    margin-right: 3px;
+    user-select: none;
+}
+
+.forgot-remeber-password input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.forgot-remeber-password a{
+    color: rgb(155, 150, 150);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+.forgot-remeber-password a:hover{
+    text-decoration: underline;/* al poner el mouse encima se subrraya */
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.container .btn:hover{
+    background-color: #f1c555;
+}
+
+.container .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.container .login-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;/* al poner el mouse encima se subrraya */
+}
+
+.login-link p a:hover{
+    text-decoration: underline;/* al poner el mouse encima se subrraya */
+}
+
+

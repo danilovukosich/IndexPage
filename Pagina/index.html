@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- incicio 15/12/23 -->
+    <!-- finalizada -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina proyecto - Login</title>
+
+    <!-- links css e iconos-->
+    <link rel="stylesheet" href="./Estilos/styleIndex.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- js -->
+    <script type="text/javascript" src="TS/login.js"></script>
+    <script type="text/javascript" src="TS/users.js"></script>
+
+</head>
+
+<body>
+    <!-- https://www.youtube.com/watch?v=hlwlM4a5rxg  
+        link de video utilizado como referencia para login -->
+
+       <!--  encerrar todo en un form? -->
+    
+    <h2 onclick="DarkLightMode()" id="Indextext">Index</h2>
+    
+    <div class="container">
+        <div class="form-login">
+            <h1>Inicio Sesion</h1>
+        
+            <div class="input-box">
+                <input type="text" placeholder="Email">
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input id="password-login" type="password" placeholder="Contraseña">
+                <i onclick="ShowHidePassword()" id="eyeIcon" class='bx bxs-show'></i>
+                <!-- <i class='bx bxs-lock-alt' ></i> -->
+            </div>
+
+            <div class="forgot-remeber-password">
+                <label><input type="checkbox">Recuerdame</label>
+                <a href="#">Olvido su contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn" onclick="LogIn()">Login</button>
+            <div class="register-link">
+                <p>No tiene una cuenta? <a href="#" onclick="LogInRegisterButton()">Registrate</a></p>
+            </div>
+        </div>
+
+        <div class="form-register">
+            <h1>Registro</h1>
+        
+            <div class="input-box">
+                <input type="text" placeholder="Usuario" id="registerUsername">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" id="registerEmail">
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Contraseña" id="registerPassword">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="forgot-remeber-password">
+                <label><input type="checkbox"> Acepto, Terminos y condiciones.</label>
+            </div>
+
+            <button type="submit" class="btn" onclick="Users.AddUserDB()">Registrar</button>
+            <div class="login-link">
+                <p>Ya tiene una cuenta? <a href="#" onclick="RegisterLogInButton()">Inicia sesion</a></p>
+            </div>
+
+        </div>
+
+        
+    
+        
+    </div>
+ 
+</body>
+</html>

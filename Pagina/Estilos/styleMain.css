@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(4, 32, 77, 1);
+}
+
+
+h1{
+    font-family: "Nabla", sans-serif;
+    font-size: 60px;
+    user-select: none;
+}
+
+.LogoBienvenido p{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+header li, a, button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* pone los elementos de izquierda y derecha en los 
+    limites y el central centrado entre los 2 */
+    align-items: center;
+    padding: 5px 3%;/* 30% en top y bottom y 10% en los costados */
+    /* position: fixed; */
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #f1c555;
+    text-decoration: underline;
+}
+
+header button{
+    padding: 9px 25px;
+    border-radius: 30px;
+    color: black;
+    /* background-color: rgba(4, 32, 77, 1); */
+    background-color: #fff;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.perfilBtn:hover{
+    background-color: #f1c555;
+}
+
+.cerrarSesionBtn:hover{
+    background-color: #f15555;
+}
+
